@@ -162,8 +162,19 @@ const contactInfo = [
 ]
 
 const downloadResume = () => {
-  // 实现简历下载逻辑
-  console.log('下载简历')
+  const resumeUrl = '/resume.pdf';
+  try {
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = '徐博亮的简历.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    ElMessage.success('简历开始下载');
+  } catch (error) {
+    ElMessage.error('下载失败，请稍后重试');
+    console.error('下载简历时发生错误:', error);
+  }
 }
 
 const scrollToContact = () => {
