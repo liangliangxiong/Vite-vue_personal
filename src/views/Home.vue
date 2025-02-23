@@ -5,7 +5,7 @@
       <el-row :gutter="40">
         <el-col :span="8">
           <div class="profile-image">
-            <el-avatar :size="200" src="https://www.apple.com.cn/home/heroes/iphone-16/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg" />
+            <el-avatar :size="200" src="/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg" />
           </div>
         </el-col>
         <el-col :span="16">
@@ -124,19 +124,19 @@ const featuredProjects = [
     id: 1,
     title: '电商平台',
     description: '基于Vue3的现代电商平台',
-    image: 'https://www.apple.com.cn/home/heroes/iphone-16/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg'
+    image: '/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg'
   },
   {
     id: 2,
     title: '在线教育系统',
     description: '全栈在线教育解决方案',
-    image: 'https://www.apple.com.cn/home/heroes/iphone-16/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg'
+    image: '/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg'
   },
   {
     id: 3,
     title: '社交媒体APP',
     description: '移动端社交应用开发',
-    image: 'https://www.apple.com.cn/home/heroes/iphone-16/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg'
+    image: '/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg'
   }
 ]
 

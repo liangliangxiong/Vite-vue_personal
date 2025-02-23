@@ -52,19 +52,19 @@ const projects = [
   {
     name: '电商平台重构',
     description: '使用Vue3和Element Plus重构电商平台前端，提升了性能和用户体验',
-    image: 'https://via.placeholder.com/400x200',
+    image: '/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg',
     technologies: ['Vue3', 'Element Plus', 'Vite']
   },
   {
     name: '在线教育系统',
     description: '开发在线教育平台的后端API和管理系统，支持课程管理和用户学习',
-    image: 'https://via.placeholder.com/400x200',
+    image: '/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg',
     technologies: ['Node.js', 'Express', 'MongoDB']
   },
   {
     name: '社交媒体APP',
     description: '负责社交媒体APP的全栈开发，实现实时聊天和动态发布等功能',
-    image: 'https://via.placeholder.com/400x200',
+    image: '/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg',
     technologies: ['React Native', 'Socket.io', 'AWS']
   }
 ]

@@ -43,19 +43,19 @@ const newsList = [
     title: 'Vue3组件开发最佳实践',
     date: '2024-02-20',
     description: '分享Vue3组件开发中的经验和技巧，包括组件设计、性能优化等方面的心得',
-    image: 'https://via.placeholder.com/400x200'
+    image: '/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg'
   },
   {
     title: 'Node.js性能调优指南',
     date: '2024-02-18',
     description: '探讨Node.js应用性能优化的方法，包括内存管理、异步操作等关键点',
-    image: 'https://via.placeholder.com/400x200'
+    image: '/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg'
   },
   {
     title: '前端工程化实践总结',
     date: '2024-02-15',
     description: '分享在前端工程化方面的实践经验，包括构建工具、自动化测试等话题',
-    image: 'https://via.placeholder.com/400x200'
+    image: '/images/hero_iphone16_avail__euwzls69btea_mediumtall_2x.jpg'
   }
 ]
 </script>
