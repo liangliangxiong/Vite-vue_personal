@@ -68,11 +68,11 @@
     <div class="contact-section" id="contact">
       <h2 class="section-title">联系方式</h2>
       <el-row :gutter="20" justify="center">
-        <el-col :span="6" v-for="contact in contactInfo" :key="contact.type">
+        <el-col :span="8" v-for="contact in contactInfo" :key="contact.type">
           <el-card class="contact-card">
             <el-icon size="40px"><component :is="contact.icon" /></el-icon>
             <h3>{{ contact.title }}</h3>
-            <p>{{ contact.value }}</p>
+            <p class="contact-value">{{ contact.value }}</p>
           </el-card>
         </el-col>
       </el-row>
@@ -145,19 +145,19 @@ const contactInfo = [
     type: 'email',
     icon: 'Message',
     title: '邮箱',
-    value: 'example@email.com'
+    value: '2926373631@qq.com'
   },
   {
     type: 'location',
     icon: 'Location',
     title: '所在地',
-    value: '深圳'
+    value: '上饶市'
   },
   {
     type: 'github',
     icon: 'Link',
     title: 'GitHub',
-    value: 'github.com/yourname'
+    value: 'github.com/liangliangxiong'
   }
 ]
 
@@ -390,48 +390,95 @@ const viewProject = (id) => {
   }
 
   .contact-section {
-    padding: 80px 10%;
+    padding: 100px 10%;
     background: linear-gradient(to right, #f8f9fa, #e9ecef);
     border-radius: 50px 50px 0 0;
+    margin-top: 60px;
 
     .section-title {
       text-align: center;
       font-size: 42px;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
       color: #2c3e50;
       font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .el-row {
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .contact-card {
       text-align: center;
-      padding: 40px 30px;
+      padding: 40px 20px;
       border-radius: 20px;
-      transition: all 0.3s ease;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       border: none;
       background-color: white;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
       &:hover {
         transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
       }
 
       .el-icon {
         font-size: 48px;
         color: #3498db;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
 
       h3 {
-        font-size: 22px;
+        font-size: 24px;
         margin: 15px 0 10px;
         color: #2c3e50;
         font-weight: 600;
       }
 
-      p {
+      .contact-value {
         color: #666;
-        font-size: 16px;
+        font-size: 18px;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 60px 5%;
+      
+      .el-col {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .contact-card {
+        padding: 30px 15px;
+
+        .el-icon {
+          font-size: 36px;
+        }
+
+        h3 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 16px;
+        }
       }
     }
   }
